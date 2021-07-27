@@ -46,4 +46,4 @@ jobs:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
           RELEASE_IMAGE: siddy555/app:latest
         with:
-          args: set image deployment/nginx-deployment app=${{ env.RELEASE_IMAGE }} --record
+          args: set image deployment/nginx-deployment nginx=${{ env.RELEASE_IMAGE }} --record
